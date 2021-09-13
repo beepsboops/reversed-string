@@ -1,17 +1,17 @@
 // const userInput = process.argv.slice(2);
 
 const userInput = "olleh";
+console.log("userInput:", userInput);
 
 const reverseString = function (string) {
-  let reversedIndex = [];
+  let reversedArr = [];
   let length = string.length;
   for (let i = 0; i <= string.length; i++) {
     let newIndex = length - i - 1;
-    reversedIndex.push(string[newIndex]);
+    reversedArr.push(string[newIndex]);
   }
-  console.log("string", string);
-  console.log("reversedIndex:", reversedIndex);
-  return reversedIndex;
+  let reversedString = reversedArr.toString();
+  return reversedString;
 };
 console.log("reverseString output:", reverseString(userInput));
 // charOrder;
